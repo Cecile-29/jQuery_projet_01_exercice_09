@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="fr">
+<head>
+  <title>jQuery_projet_01_exercice_09</title>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.js">
+  </script>
+</head>
+<body>
+  <div class="container row justify-content-center">
+    <h1 class="col-12 p-4 m-2 text-center">Exercice_09 : Donner aux div "texte_1" et "texte_3" une bordure de 5 pixels, verte à pointillés ("5px green dashed").</h1>
+    <div class="offset-1 col-10 row text-justify" id="texte">
+      <div id="texte_1">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet quam eu molestie hendrerit. Proin in metus a velit fermentum lacinia. Sed semper euismod sapien, at ultricies metus luctus sit amet. Donec sodales accumsan sem ut egestas.
+        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec pulvinar tristique facilisis. Donec rhoncus, enim eget malesuada dictum, risus justo aliquam ex, sit amet ultricies mauris libero nec massa. Nunc eget
+        mauris non massa sollicitudin porta id a massa. Nullam dictum quam non leo varius, et tempus tortor egestas. Integer rhoncus non enim ac auctor. Phasellus mollis lorem mattis elit ultrices fermentum. Donec interdum vel risus porttitor
+        pulvinar. Proin pulvinar lacus sed nunc feugiat imperdiet non sit amet quam.
+      </div>
+      <div id="texte_2">
+        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse interdum metus at metus iaculis, vitae dapibus eros rhoncus. Suspendisse tempus lectus erat, vitae malesuada sem tempus non. Ut suscipit eros
+        ac interdum malesuada. In volutpat tellus in lacus malesuada, non finibus orci mattis. Phasellus vulputate dui arcu, non feugiat justo blandit ut. Etiam ut lacinia lorem, sit amet rhoncus ex. Nunc ornare sem a lorem venenatis tincidunt.
+      </div>
+      <div id="texte_3">
+        Nunc maximus at purus id malesuada. Praesent congue dui vitae pellentesque eleifend. Nunc in ligula enim. Suspendisse nec tincidunt lacus, vitae vehicula magna. Nunc eu tempus enim. Nullam et rutrum quam, ut consectetur nunc. Duis tincidunt
+        imperdiet velit, vel mattis tortor aliquam nec. Nulla ac vehicula elit. Mauris iaculis velit eu odio commodo viverra. Proin sit amet facilisis sapien. Aliquam volutpat placerat eros, eget pellentesque elit pretium ut. Maecenas lacinia ornare
+        eros vitae lacinia. Etiam congue dapibus enim, sed fringilla sapien fringilla vitae.
+      </div>
+    </div>
+  </div>
+  <script>
+    $(document).ready(function() {
+      //ici on applique une nouvelle propriété css aux divs id="#texte_1" id="#texte_3" séparées dans le même objet par une virgule
+      // une bordure de 5 pixels verte discontinue
+      $("#texte_1, #texte_3").css({
+        "border": "5px green dashed"
+      });
+    });
+  </script>
+</body>
+</html>
